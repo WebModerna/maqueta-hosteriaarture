@@ -28,11 +28,11 @@ box-sizing()
 	-moz-box-sizing border-box
 	-webkit-box-sizing border-box
 box-shadow_lindo()
-	box-shadow 0px 1px 1px 0px blanco_transparente inset, 0px -15px 15px 0px rgba(0,0,0,0.25) inset
-	-o-box-shadow 0px 1px 1px 0px blanco_transparente inset, 0px -15px 15px 0px rgba(0,0,0,0.25) inset
-	-ms-box-shadow 0px 1px 1px 0px blanco_transparente inset, 0px -15px 15px 0px rgba(0,0,0,0.25) inset
-	-moz-box-shadow 0px 1px 1px 0px blanco_transparente inset, 0px -15px 15px 0px rgba(0,0,0,0.25) inset
-	-webkit-box-shadow 0px 1px 1px 0px blanco_transparente inset, 0px -15px 15px 0px rgba(0,0,0,0.25) inset
+	box-shadow 0px 1px 1px 0px rgba(255,255,255,0.5) inset, 0px -15px 15px 0px rgba(0,0,0,0.25) inset
+	-o-box-shadow 0px 1px 1px 0px rgba(255,255,255,0.5) inset, 0px -15px 15px 0px rgba(0,0,0,0.25) inset
+	-ms-box-shadow 0px 1px 1px 0px rgba(255,255,255,0.5) inset, 0px -15px 15px 0px rgba(0,0,0,0.25) inset
+	-moz-box-shadow 0px 1px 1px 0px rgba(255,255,255,0.5) inset, 0px -15px 15px 0px rgba(0,0,0,0.25) inset
+	-webkit-box-shadow 0px 1px 1px 0px rgba(255,255,255,0.5) inset, 0px -15px 15px 0px rgba(0,0,0,0.25) inset
 box-shadow_texto()
 	box-shadow 0px -1px 0px rgba(0,0,0,0.25)
 	-o-box-shadow 0px -1px 0px rgba(0,0,0,0.25)
@@ -364,7 +364,6 @@ th {
 	
 
 @import "bootstrap-theme.styl"
-@import "fwslider.styl"
 @font-face
 	font-family 'Open Sans'
 	font-style normal
@@ -5473,6 +5472,8 @@ a.list-group-item-danger.active:focus {
 /*Personalizadas*/
 @import "icomoon.styl"
 @import "jquery-ui.styl"
+@import "fwslider.styl"
+rosita = #E8645A
 
 a
 	transition(all 0.3s ease-in-out)
@@ -5484,9 +5485,20 @@ table
 	thead
 		tr:first-child
 			th
-				background #E8645A
+				background rosita
 				color #fff
 				text-shadow_lindo()
+
+/*@media screen and (max-width: 768px)
+	#header_nav
+		height 0
+		visibility hidden
+		opacity 0
+		transition(all 0.3s ease-in-out)
+		ul
+			height inherit
+			visibility inherit*/
+
 
 
 #ir_arriba
@@ -5550,13 +5562,32 @@ table
 	img
 		width 40px
 
+#fwslider
+	overflow hidden
+	height auto
 
 .center
 	text-align center
 
 .thumbnail
+	overflow hidden
+	
 	img
+		transition(all 0.3s ease-in-out)
 		width 100%
+
+	figcaption
+		font-family "Fjord"
+		transition(all 0.3s ease-in-out)
+
+	&:hover, &:focus, &:active
+		img
+			opacity 0.7
+		figcaption
+			background rosita
+			box-shadow_lindo()
+			color #fff
+			text-shadow_lindo()
 
 .thumbnail-320px
 	display inline-block
