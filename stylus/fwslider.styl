@@ -96,7 +96,7 @@
 	margin: 0 auto;
 	text-transform: uppercase;
 	color: #fff;
-	font-size: 4.5em;
+	font-size: 2em;
 	background: #E8645A;
 	padding: 15px 30px;
 	font-style: normal;
@@ -134,16 +134,21 @@
 	}
 	#fwslider .description {
 		width: 80%;
-		font-size:13px;
+		/*font-size:13px;*/
 		padding: 15px 10px;
 	}
 }
 
 /* ------------------------------- 5. Media Query Max Width 719 ------------------------------- */
-
+@media only screen and (max-width:500px) {
+	#fwslider .slide_content_wrap { display:none; }
+}
 @media only screen and (max-width:719px) {
 
-    #fwslider .slide_content_wrap { display:none; }
+    /*#fwslider .slide_content_wrap { display:none; }*/
+    #fwslider .slide_content_wrap .title, #fwslider .slide_content_wrap .description 	{
+    	font-size 16px
+	}
     #fwslider .timers { display:none; }
     #fwslider .slide_content {cursor: pointer;}
     #fwslider .slideNext {
