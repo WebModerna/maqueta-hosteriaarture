@@ -1,4 +1,9 @@
 *.log
+*.zip
+*.rar
+*.json
+icomoon
+stylus/helpers
 .htaccess
 sitemap.xml
 sitemap.xml.gz
