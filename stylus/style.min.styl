@@ -1,4 +1,32 @@
 /*Bootstrap v3.2.0 */
+rosita = #E8645A
+mostaza = #AA883F
+mostaza_oscuro = #776031
+azul_facebook = #435F9C
+/* Colores nuevos */
+turquesa = #1abc9c
+esmeralda = #2ecc71
+azul_twitter = #3498db
+amatista = #9b59b6
+azul_asfalto = #34495e
+
+verde_mar = #16a085
+verde_neferteris = #27ae60
+azul_feisbuc = #2980b9
+morado_wisteria = #8e44ad
+medianoche = #2c3e50
+
+amarillo_flor = #f1c40f
+carrot = #e67e22
+rojo_ladrillo = #e74c3c
+gris_nube = #ecf0f1
+gris_concreto = #95a5a6
+
+naranja = #f39c12
+naranja_fanta = #d35400
+rojo_google = #c0392b
+plateado = #bdc3c7
+gris_absesos = #7f8c8d
 opacity(n)
 	opacity n
 	if support-for-ie
@@ -5473,7 +5501,8 @@ a.list-group-item-danger.active:focus {
 @import "icomoon.styl"
 @import "jquery-ui.styl"
 @import "fwslider.styl"
-rosita = #E8645A
+
+
 
 a
 	transition(all 0.3s ease-in-out)
@@ -5485,11 +5514,69 @@ table
 	thead
 		tr:first-child
 			th
-				background rosita
+				/*background rosita*/
+				background mostaza
 				color #fff
 				text-shadow_lindo()
 
-/*@media screen and (max-width: 768px)
+.promocion
+	background rojo_ladrillo url('../img/reabon.png') no-repeat top left
+	background-size( auto 100%)
+	border 1px dashed rgba(255,255,255,0.5)
+	box-shadow( 0px 0px 1px 5px rojo_google unquote(",") 0px 1px 1px 0px rgba(255,255,255,0.5) inset unquote(",") 0px -15px 15px 0px rgba(0,0,0,0.25) inset )
+	color #fff
+	overflow hidden
+	padding 2em 2em 1em 2em
+	margin 0 auto 2em auto
+	text-shadow_lindo()
+	width 100%
+	z-index 321
+
+	a
+		color #fff
+		transition(all 0.4s ease-in-out)
+
+		&:before
+			font-family 'icomoon'
+			content "\e655"
+			opacity 0
+			position absolute
+			top 0
+		
+		&:hover, &:focus, &:active
+			text-decoration none
+			&:before
+				opacity 1			
+
+		h2
+			border none
+			font-size 1.2em
+			margin 0 auto
+			text-align center
+			width 60%
+
+@media screen and (min-width: 768px)
+	#search-form
+		.form-group
+			input
+				transition(all 0.3s ease-in-out)
+				width 100px
+				&:focus
+					width 200px
+
+	.promocion
+		background-image none
+		position absolute
+		right -6em
+		top 1em
+		transform(rotateZ(45deg))
+		width 350px
+		
+
+	.columna-2
+		column-count(2)
+		column-gap(1em)
+/*
 	#header_nav
 		height 0
 		visibility hidden
@@ -5562,36 +5649,43 @@ table
 	img
 		width 40px
 
+#logo_footer
+	float left
+	bottom 0
+	left 1em
+	img
+		width 150px
+
 #fwslider
 	overflow hidden
 	height auto
 
+
+
 .center
 	text-align center
 
-.thumbnail
-	overflow hidden
+
+
+.facebook, .mail
+	color #fff
+	opacity 0.8
+	text-shadow_lindo()
 	
-	img
-		transition(all 0.3s ease-in-out)
-		width 100%
-
-	figcaption
-		font-family "Fjord"
-		transition(all 0.3s ease-in-out)
-
 	&:hover, &:focus, &:active
-		img
-			opacity 0.7
-		figcaption
-			background rosita
-			box-shadow_lindo()
-			color #fff
-			text-shadow_lindo()
+		color #fff
+		opacity 1
 
-.thumbnail-320px
-	display inline-block
-	max-width 320px
+.facebook
+	background azul_facebook
+
+.footer_nav
+	ul
+		li
+			display inline-block
+
+.mail
+	background mostaza_oscuro
 
 .formulario_separado
 	button
@@ -5604,8 +5698,37 @@ table
 .left
 	text-align left
 
+
+
 .right
 	text-align right
+
+.thumbnail
+	overflow hidden
+	
+	img
+		transition(all 0.3s ease-in-out)
+		width 100%
+
+	figcaption
+		/*font-family "Fjord"*/
+		transition(all 0.3s ease-in-out)
+
+	&:hover, &:focus, &:active
+		img
+			opacity 0.7
+		figcaption
+			/*background rosita*/
+			box-shadow_lindo()
+			background mostaza
+			color #fff
+			text-shadow_lindo()
+
+.thumbnail-320px
+	display inline-block
+	max-width 320px
+
+
 
 
 @media screen and (min-width: 450px)

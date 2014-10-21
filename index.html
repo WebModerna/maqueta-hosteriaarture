@@ -47,13 +47,14 @@
 						Hostería Arture
 						<hr />
 						<small>Tranquilo y familiar</small>
+						<small><i class="icon-phone"> </i>03544-470651</small>
 					</h1>		
 				</figcaption>
 				</figure>
 		</div><!-- #logo -->
 
 		
-		<nav  class="navbar navbar-default" role="navigation">
+		<nav class="affix-top navbar navbar-default" role="navigation">
 			<div class="navbar-header">
 				<button id="menu" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header_nav"> 
 
@@ -72,18 +73,19 @@
 			<div id="header_nav" class="collapse navbar-collapse" >
 
 				<ul class="nav navbar-nav">
-					<li><a href="index.html">Inicio</a></li>
+					<li class="active current_menu_item current-page-item"><a href="index.html">Inicio</a></li>
 					<li><a href="contacto.html">Contacto</a></li>
 					<li><a href="fotos.html">Fotos</a></li>
 					<li><a href="traslasierra.html">Traslasierra</a></li>
-					<li><a href="index.html#tarifas">Tarifas</a></li>
+					<li><a href="tarifas.html">Tarifas</a></li>
+					<li><a href="servicios.html">Servicios</a></li>
 				</ul>
 				
-				<form class="navbar-form navbar-right" role="search">
+				<form id="search-form" class="navbar-form navbar-right" role="search">
 					<div class="form-group input-group">
 						<input type="text" class="form-control" placeholder="Husmear...">
 						<span class="input-group-btn">
-							<button class="btn btn-primary" type="button"><i class="icon-search"></i></button>
+							<button class="btn btn-default" type="button"><i class="icon-search"></i></button>
 						</span>
 					</div>
 				</form>
@@ -94,7 +96,45 @@
 	<section class="container-fluid">
 		<!-- start slider -->
 		<div id="fwslider">
-		  <div class="slider_container">
+			<div  class="promocion center hidden-xs">
+				<a href="#" data-toggle="modal" data-target=".bs-example-modal-sm1">
+					<h2>Promoción día de la madre</h2>
+				</a>
+			</div>
+
+			<!--<div class="modal fade bs-example-modal-sm1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" class="close" data-dismiss="modal">
+				<div class="modal-dialog modal-sm">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+							<h3 class="modal-title">Promoción día de la madrastra</h3>
+						</div>
+						<div class="">
+							<img style="width:250px" src="img/4.jpg" alt="promo" class="img-rounded">
+							<h4>Todos los precios reducidos en un 456%. Solo válido hasta las 26:76hs del día de ayer.</h4>
+						</div>
+					</div>
+				</div>
+			</div> -->
+
+			<!-- .modal -->
+			<div class="modal fade bs-example-modal-sm1" role="dialog" aria-labelledby="" aria-hidden="true" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button class="btn btn-default pull-right" data-dismiss="modal">
+							<span aria-hidden="true" class="icon-close"></span></button>
+							<h4 class="modal-title center"><i class="icon-gift"> </i>Promoción día de la madrastra</h4>
+						</div>
+						<div class="modal-body center">
+							<p><img style="width:250px" src="img/4.jpg" alt="promo" class="img-rounded"></p>
+							<p>Todos los precios reducidos en un 456%. Solo válido hasta las 26:76hs del día de ayer.</p>
+						</div>
+					</div><!-- /.modal-content -->
+				</div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+
+			<div class="slider_container">
 				
 				<div class="slide"> 
 					<img src="img/1.jpg">
@@ -144,132 +184,31 @@
 			<div class="timers"></div>
 			<div class="slidePrev"><span></span></div>
 			<div class="slideNext"><span></span></div>
-	 	</div><!--/slider -->
-		
-
-		
-		<article class="content-fluid row" id="tarifas">
-			<h3 class="page-header col-md-12 center"><i class="icon-coin"> </i>Tarifas</h3>
-			<div class="col-md-6">	
-				<table class="tarifa table table-striped table-hover table-bordered">
-					<thead>
-						<tr>
-							<th colspan="4" class="center"><i class="icon-home3"> </i>Cabañas</th>
-						</tr>
-						<tr>
-							<th>Personas</th>
-							<th>Alta</th>
-							<th>Media</th>
-							<th>Baja</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>2</td>
-							<td>$300</td>
-							<td>$240</td>
-							<td>$210</td>
-						</tr>
-						<tr>
-							<td>3</td>
-							<td>$420</td>
-							<td>$340</td>
-							<td>$300</td>
-						</tr>
-						<tr>
-							<td>4</td>
-							<td>$540</td>
-							<td>$430</td>
-							<td>$380</td>
-						</tr>
-						<tr>
-							<td>5</td>
-							<td>$500</td>
-							<td>$480</td>
-							<td>$420</td>
-						</tr>
-						<tr>
-							<td colspan="4">
-								<strong>Temporada Alta:</strong>
-								Enero, Febrero y Semana Santa.
-							</td>
-						</tr>
-						<tr>
-							<td colspan="4">
-								<strong>Temporada Media:</strong>
-								Diciembre, Marzo, vacaciones de Julio, feriados y fines de semana largos.
-							</td>
-						</tr>
-						<tr>
-							<td colspan="4">
-								<strong>Temporada Baja:</strong>
-								resto del año.
-							</td>
-						</tr>
-					</tbody>
-				</table>
-				</div>
-				<div class="col-md-6">
-				<table class="tarifa table table-striped table-hover table-bordered col-md-6">
-					<thead>
-						<tr>
-							<th colspan="4" class="center"><i class="icon-office"> </i>Hotel de Campo</th>
-						</tr>
-						<tr>
-							<th>Personas</th>
-							<th>Alta</th>
-							<th>Media</th>
-							<th>Baja</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>2</td>
-							<td>$300</td>
-							<td>$240</td>
-							<td>$210</td>
-						</tr>
-						<tr>
-							<td>3</td>
-							<td>$420</td>
-							<td>$340</td>
-							<td>$300</td>
-						</tr>
-						<tr>
-							<td>4</td>
-							<td>$540</td>
-							<td>$430</td>
-							<td>$380</td>
-						</tr>
-						<tr>
-							<td>5</td>
-							<td>$500</td>
-							<td>$480</td>
-							<td>$420</td>
-						</tr>
-						<tr>
-							<td colspan="4">
-								<strong>Temporada Alta:</strong>
-								Enero, Febrero y Semana Santa.
-							</td>
-						</tr>
-						<tr>
-							<td colspan="4">
-								<strong>Temporada Media:</strong>
-								Diciembre, Marzo, vacaciones de Julio, feriados y fines de semana largos.
-							</td>
-						</tr>
-						<tr>
-							<td colspan="4">
-								<strong>Temporada Baja:</strong>
-								resto del año.
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-		</article>
+	 	</div><!--/slider -->		
 		<hr />
+		<article class="container-fluid">
+			<div class="promocion center visible-xs">
+				<a href="#" data-toggle="modal" data-target=".bs-example-modal-sm2">
+					<h2><i class="icon-gift"> </i>Promoción día de la madre</h2>
+				</a>
+			</div>
+
+			<div class="modal fade bs-example-modal-sm2" role="dialog" aria-labelledby="" aria-hidden="true" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button class="btn btn-default pull-right" data-dismiss="modal">
+							<span aria-hidden="true" class="icon-close"></span></button>
+							<h4 class="modal-title center"><i class="icon-gift"> </i>Promoción día de la madrastra</h4>
+						</div>
+						<div class="modal-body center">
+							<p><img style="width:250px" src="img/4.jpg" alt="promo" class="img-rounded"></p>
+							<p>Todos los precios reducidos en un 456%. Solo válido hasta las 26:76hs del día de ayer.</p>
+						</div>
+					</div><!-- /.modal-content -->
+				</div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+		</article>
 	</section>
 	<footer class="container-fluid">
 		<div class="copyright center">
@@ -280,10 +219,12 @@
 				&copy; 2014 Todos los derechos reservados | Hostería Arture
 			</p>
 			<div>
-				<a href="http://www.facebook.com" target="_blank" title="Facebook"><i class="btn btn-primary icon-facebook"></i></a>
-				<a href="http://www.google.com.ar" target="_blank" title="Google+"><i class="btn btn-primary icon-googleplus"></i></a>
-				<a href="#" target="_blank" title="Feed"><i class="btn btn-primary icon-feed"></i></a>
-				<a href="mailto:hosteriaarture@hotmail.com" target="_blank" title="Contacto"><i class="btn btn-primary icon-mail2"></i></a>
+				<a href="http://www.facebook.com" target="_blank" title="Facebook"><i class="facebook btn icon-facebook"></i></a>
+				<a href="#" target="_blank" title="Feed"><i class="btn btn-warning icon-feed"></i></a>
+				<a href="mailto:hosteriaarture@hotmail.com" target="_blank" title="Contacto"><i class="btn mail icon-mail"></i></a>
+			</div>
+			<div id="logo_footer">
+				<img src="img/logo-cura-brochero.png" alt="Logo del Cura Brochero" />
 			</div>
 			<hr />
 			<p>
