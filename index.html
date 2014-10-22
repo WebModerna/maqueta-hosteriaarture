@@ -34,8 +34,9 @@
 	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
+	<!--[if gte IE 9]><style type="text/css">.gradient{filter:none !important;}</style><![endif]-->
 </head>
-<body>
+<body class="gradient">
 	<header class="container-fluid">
 		<div id="logo">
 			<figure>
@@ -54,7 +55,7 @@
 		</div><!-- #logo -->
 
 		
-		<nav class="affix-top navbar navbar-default" role="navigation">
+		<nav class="navbar navbar-default" role="navigation">
 			<div class="navbar-header">
 				<button id="menu" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header_nav"> 
 
@@ -102,32 +103,17 @@
 				</a>
 			</div>
 
-			<!--<div class="modal fade bs-example-modal-sm1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" class="close" data-dismiss="modal">
-				<div class="modal-dialog modal-sm">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-							<h3 class="modal-title">Promoción día de la madrastra</h3>
-						</div>
-						<div class="">
-							<img style="width:250px" src="img/4.jpg" alt="promo" class="img-rounded">
-							<h4>Todos los precios reducidos en un 456%. Solo válido hasta las 26:76hs del día de ayer.</h4>
-						</div>
-					</div>
-				</div>
-			</div> -->
-
 			<!-- .modal -->
 			<div class="modal fade bs-example-modal-sm1" role="dialog" aria-labelledby="" aria-hidden="true" tabindex="-1">
 				<div class="modal-dialog">
-					<div class="modal-content">
+					<div class="modal-content promocion_modal">
 						<div class="modal-header">
 							<button class="btn btn-default pull-right" data-dismiss="modal">
 							<span aria-hidden="true" class="icon-close"></span></button>
 							<h4 class="modal-title center"><i class="icon-gift"> </i>Promoción día de la madrastra</h4>
 						</div>
 						<div class="modal-body center">
-							<p><img style="width:250px" src="img/4.jpg" alt="promo" class="img-rounded"></p>
+							<p><img src="img/4.jpg" alt="promo" class="img-rounded promocion_imagen"></p>
 							<p>Todos los precios reducidos en un 456%. Solo válido hasta las 26:76hs del día de ayer.</p>
 						</div>
 					</div><!-- /.modal-content -->
