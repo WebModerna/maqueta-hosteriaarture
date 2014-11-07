@@ -4,7 +4,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<title>Contacto | Hostería Arture</title>
+	<title>Contacto y Tarifas | Hostería Arture</title>
 	
 	<link href="css/style.min.css" rel="stylesheet" media="screen" />
 
@@ -65,7 +65,7 @@
 					<span class="btn-danger icon-bar"></span>
 				</button>
 
-				<a id="logo_brand" class="navbar-brand collapsed" href="index.html">
+				<a id="logo_brand" class="navbar-brand" href="index.html">
 					<img  class="visible-xs" src="img/logo2.png">
 				</a>
 			</div>
@@ -75,16 +75,16 @@
 
 				<ul class="nav navbar-nav">
 					<li><a href="index.html">Inicio</a></li>
-					<li class="active current_menu_item current-page-item"><a href="contacto.html">Contacto</a></li>
+					<li class="active current_menu_item current-page-item"><a href="contacto.html">Contacto y Tarifas</a></li>
 					<li><a href="fotos.html">Fotos</a></li>
 					<li><a href="traslasierra.html">Traslasierra</a></li>
-					<li><a href="tarifas.html">Tarifas</a></li>
 					<li><a href="servicios.html">Servicios</a></li>
+					<li><a href="desubicacion.html">Desubicación</a></li>
 				</ul>
 				
 				<form id="search-form" class="navbar-form navbar-right" role="search">
 					<div class="form-group input-group">
-						<input type="text" class="form-control" placeholder="Husmear...">
+						<input type="text" class="form-control" placeholder="Chusmear...">
 						<span class="input-group-btn">
 							<button class="btn btn-default" type="button"><i class="icon-search"></i></button>
 						</span>
@@ -100,7 +100,7 @@
 			<div class="slider_container">
 				<h2 class="title">
 					<i class="icon-mail"> </i>
-					Contacto
+					Contacto | <i class="icon-coin"> </i>Tarifas
 				</h2>			
 			</div>
 		</div><!--/slider -->
@@ -126,18 +126,18 @@
 						<input type="number" min="0" max="99" class="form-control" placeholder="Cantidad de Personas" required />
 					</div>
 					<div class="input-group">
-						<span class="input-group-addon">
+						<span class="input-group-addon" title="Día de ingreso">
 							<i class="icon-redo2"> </i>
 							<i class="icon-calendar"> </i>
 						</span>
-						<input type="date" class="datepicker form-control" required />
+						<input title="Día de ingreso" type="date" class="datepicker form-control" required />
 					</div>
 					<div class="input-group">
-						<span class="input-group-addon">
+						<span class="input-group-addon" title="Día de egreso">
 							<i class="icon-undo2"> </i>
 							<i class="icon-calendar"></i>
 						</span>
-						<input type="date" class="datepicker form-control" required />
+						<input title="Día de egreso" type="date" class="datepicker form-control" required />
 					</div>
 					<textarea rows="7" placeholder="Mensaje" class="form-control" required ></textarea>
 					<p>
@@ -146,11 +146,80 @@
 					</p>
 				</form>
 			</article>
-			<article class="col-md-6">
-				<h3 class="page-header">Ubicación</h3>
+			<article class="col-md-6" id="tarifas">
+				<!-- <h3 class="page-header">Ubicación</h3>
 				<iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265&amp;output=embed"></iframe><br><small><a href="https://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265" style="font-family: 'Open Sans', sans-serif;color:#555555;text-shadow:0 1px 0 #ffffff; text-align:left;font-size:12px;padding: 5px;">View Larger Map</a></small>
-				<p class="style">opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-				
+				<p class="style">opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p> -->
+				<h3 class="page-header">Consultá acá las Tarifas</h3>
+				<table class="tarifa table table-striped table-hover table-bordered">
+					<thead>
+						<tr>
+							<th colspan="4" class="center"><i class="icon-coin"> </i>Tarifas</th>
+						</tr>
+						<tr>
+							<th>Detalles</th>
+							<th>Alta</th>
+							<th>Media</th>
+							<th>Baja</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Habitación doble</td>
+							<td>$300</td>
+							<td>$240</td>
+							<td>$210</td>
+						</tr>
+						<tr>
+							<td>Habitación triple</td>
+							<td>$420</td>
+							<td>$340</td>
+							<td>$300</td>
+						</tr>
+						<tr>
+							<td>Departamento para 2</td>
+							<td>$540</td>
+							<td>$430</td>
+							<td>$380</td>
+						</tr>
+						<tr>
+							<td>Departamento para 3</td>
+							<td>$500</td>
+							<td>$480</td>
+							<td>$420</td>
+						</tr>
+						<tr>
+							<td>Departamento para 4</td>
+							<td>$500</td>
+							<td>$480</td>
+							<td>$420</td>
+						</tr>
+						<tr>
+							<td colspan="4">
+								<strong>Cama adicional:</strong>
+								$ 120.-
+							</td>
+						</tr>
+						<tr>
+							<td colspan="4">
+								<strong>Temporada Alta:</strong>
+								Enero, Febrero y Semana Santa.
+							</td>
+						</tr>
+						<tr>
+							<td colspan="4">
+								<strong>Temporada Media:</strong>
+								Diciembre, Marzo, vacaciones de Julio, feriados y fines de semana largos.
+							</td>
+						</tr>
+						<tr>
+							<td colspan="4">
+								<strong>Temporada Baja:</strong>
+								resto del año.
+							</td>
+						</tr>
+					</tbody>
+				</table>
 
 			</article>
 			</div><!-- .row -->
